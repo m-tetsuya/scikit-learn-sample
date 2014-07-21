@@ -8,7 +8,9 @@ R =  load.sales_matrix()
 print R
 print R.shape
 
-svd = TruncatedSVD(n_components=2)
+R = R[-50000:][:,-50000:]
+print R.shape
+svd = TruncatedSVD(n_components=5)
 svd.fit(R) 
 print svd.components_
 
