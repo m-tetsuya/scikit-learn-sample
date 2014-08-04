@@ -12,8 +12,5 @@ R = R[-50000:][:,-50000:]
 print R.shape
 svd = TruncatedSVD(n_components=5)
 svd.fit(R) 
-print svd.components_
+np.save("svd.npy",svd.components_)
 
-#sd.save_pq(nP,nQ)
-#p,q = sd.load_pq()
-#U = np.dot(p.T ,q)
