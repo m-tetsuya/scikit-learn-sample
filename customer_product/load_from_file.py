@@ -1,14 +1,5 @@
 import numpy as np
 
-
-#def move_zero_row(X):
-#  result = []
-#  for x in X:
-#    if sum(x) > 0:
-#      result.append(x)
-#  return np.array(result)
-#
-
 def sales_matrix():
   a = []
   d = {}
